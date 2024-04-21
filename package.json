@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "is-ci || husky install",
+    "prepare": "is-ci || husky",
     "fmt": "prettier --ignore-path ./.prettierignore --write . && prettier --check .",
     "build": "next build",
     "dev": "next dev",
