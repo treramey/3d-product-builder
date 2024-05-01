@@ -5,9 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
+import { Button } from "./ui/button";
+
 export function Sidebar() {
   return (
-    <aside className="fixed right-0 top-0 flex h-screen w-96 flex-shrink-0 flex-col items-center justify-between bg-gray-100 px-4 pb-4">
+    <aside className="fixed right-0 top-0 hidden h-screen w-96 flex-shrink-0 flex-col items-center justify-between bg-gray-100 px-4 pb-4 sm:flex">
       <div className="flex w-full flex-col items-center justify-center">
         <div className="mt-6">
           <Link href="/">
@@ -63,6 +65,7 @@ export function Sidebar() {
           </AccordionItem>
         </Accordion>
       </div>
+      <Button className="bottom-0">Save + Checkout</Button>
     </aside>
   );
 }

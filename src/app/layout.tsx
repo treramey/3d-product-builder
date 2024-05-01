@@ -1,5 +1,7 @@
 import { Inter as FontSans } from "next/font/google";
 
+import { Layout } from "@/components/ui/layout";
+
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 
@@ -22,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "overscroll-none whitespace-pre-line bg-background font-sans antialiased",
           fontSans.variable
         )}>
-        {children}
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
